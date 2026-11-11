@@ -1,0 +1,158 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffe4ef, #f3eaff);
+    margin: 0;
+    padding: 30px 15px;
+    color: #49364b;
+}
+
+.container {
+    max-width: 850px;
+    margin: auto;
+}
+
+header {
+    background: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px #d9b7ca;
+}
+
+header h1 {
+    color: #d34f91;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #777;
+}
+
+.statistik {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.card h3 {
+    font-size: 15px;
+}
+
+.card p {
+    color: #d34f91;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.form-tugas,
+.daftar {
+    background: white;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 18px;
+}
+
+h2 {
+    color: #d34f91;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 13px;
+    border: 1px solid #e5c5d8;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+button {
+    background: #d34f91;
+    color: white;
+    border: none;
+    padding: 13px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ad3674;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px;
+    border-bottom: 1px solid #eee;
+}
+
+li span {
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+li input {
+    flex: 0 0 auto;
+}
+
+li.done span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.hapus {
+    background: #f16b7c;
+    padding: 8px 12px;
+}
+
+footer {
+    text-align: center;
+    color: #777;
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+@media (max-width: 550px) {
+    .statistik {
+        gap: 7px;
+    }
+
+    .card {
+        padding: 12px 5px;
+    }
+
+    .card h3 {
+        font-size: 11px;
+    }
+
+    .card p {
+        font-size: 23px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+}
